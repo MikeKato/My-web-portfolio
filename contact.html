@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Kato Mike</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">
+        <i class="bi bi-hexagon-fill me-2" style="color:var(--violet);"></i>
+        <span class="brand-km">Kato Mike</span>
+      </a>
+      <button class="navbar-toggler border-0" type="button"
+              data-bs-toggle="collapse" data-bs-target="#mainNav"
+              aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list text-white fs-4"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="ph-content container">
+      <h1>Contact Me</h1>
+      <p class="lead mt-2">I would love to hear from you — let's connect and collaborate</p>
+      <nav aria-label="breadcrumb" class="mt-3">
+        <ol class="breadcrumb justify-content-center">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Contact</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <!-- SECTION 1: CONTACT INFORMATION + FORM -->
+  <section>
+    <div class="container">
+      <div class="row g-5 align-items-start">
+
+        <!-- LEFT: Contact Info Cards -->
+        <div class="col-lg-5">
+          <div class="divider"></div>
+          <h2 class="mb-1">Get In Touch</h2>
+          <p style="color:var(--muted); font-size:0.95rem; margin-bottom:1.6rem;">
+            Whether you have a question, a project idea, or just want to say hello —
+            feel free to reach out. I am always open to meaningful conversations and
+            new opportunities.
+          </p>
+
+          <!-- Email -->
+          <div class="ci-card">
+            <div class="ci-icon teal">
+              <i class="bi bi-envelope-fill"></i>
+            </div>
+            <div>
+              <h6>Email Address</h6>
+              <a href="mailto:mmkatomike@gmail.com">mmkatomike@gmail.com</a>
+            </div>
+          </div>
+
+          <!-- Phone -->
+          <div class="ci-card">
+            <div class="ci-icon gold">
+              <i class="bi bi-telephone-fill"></i>
+            </div>
+            <div>
+              <h6>Phone Number</h6>
+              <a href="tel:+256762639656">+256 70 285 1869</a>
+              <p class="mt-1" style="font-size:0.8rem; color:var(--muted);">
+                Available Mon – Fri, 8 am – 6 pm EAT
+              </p>
+            </div>
+          </div>
+
+          <!-- Location -->
+          <div class="ci-card">
+            <div class="ci-icon navy">
+              <i class="bi bi-geo-alt-fill"></i>
+            </div>
+            <div>
+              <h6>Location</h6>
+              <p>Bugema University — Kampala Campus</p>
+              <p>Kampala, Uganda, East Africa</p>
+            </div>
+          </div>
+
+          <!-- GitHub -->
+          <div class="ci-card">
+            <div class="ci-icon purple">
+              <i class="bi bi-github"></i>
+            </div>
+            <div>
+              <h6>GitHub</h6>
+              <a href="mmkatomike@gmail.com" target="_blank" rel="noopener noreferrer">mmkatomike@gmail.com</a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- RIGHT: Contact Form -->
+        <div class="col-lg-7">
+          <div class="cf-card">
+            <h4>Send Me a Message</h4>
+            <p class="sub">Fill in the form below and I will get back to you as soon as possible.</p>
+
+            <form action="#" method="post" novalidate>
+              <div class="row g-3">
+
+                <!-- Full Name -->
+                <div class="col-md-6">
+                  <label for="fullName" class="form-label">
+                    Full Name <span style="color:#dc3545;">*</span>
+                  </label>
+                  <input type="text" class="form-control" id="fullName" name="fullName"
+                         placeholder="Your full name" required />
+                </div>
+
+                <!-- Email Address -->
+                <div class="col-md-6">
+                  <label for="emailAddress" class="form-label">
+                    Email Address <span style="color:#dc3545;">*</span>
+                  </label>
+                  <input type="email" class="form-control" id="emailAddress" name="emailAddress"
+                         placeholder="your@email.com" required />
+                </div>
+
+                <!-- Subject -->
+                <div class="col-12">
+                  <label for="subject" class="form-label">
+                    Subject <span style="color:#dc3545;">*</span>
+                  </label>
+                  <input type="text" class="form-control" id="subject" name="subject"
+                         placeholder="What is your message about?" required />
+                </div>
+
+                <!-- Message -->
+                <div class="col-12">
+                  <label for="message" class="form-label">
+                    Message <span style="color:#dc3545;">*</span>
+                  </label>
+                  <textarea class="form-control" id="message" name="message" rows="6"
+                            placeholder="Write your message here. Thank you!" required></textarea>
+                </div>
+
+                <!-- Submit -->
+                <div class="col-12">
+                  <button type="submit" class="btn-submit">
+                    <i class="bi bi-send me-2"></i>Send Message
+                  </button>
+                </div>
+
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: MAP -->
+  <section class="bg-light-custom">
+    <div class="container">
+      <div class="text-center mb-5">
+        <div class="divider mx-auto"></div>
+        <h2>Find Me Here</h2>
+        <p class="sub-text mt-2">Bugema University — Kampala Campus, Kampala, Uganda</p>
+      </div>
+
+      <div class="map-wrap">
+        <div class="ratio" style="--bs-aspect-ratio: 42%;">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127672.35954498944!2d32.5084741812499!3d0.3152408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbc0f9d74b39b%3A0x37e0b0f8f1b22b08!2sBugema%20University%20Kampala%20Campus!5e0!3m2!1sen!2sug!4v1700000000000!5m2!1sen!2sug"
+            width="100%" height="100%"
+            style="border:0; display:block;"
+            allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Bugema University Kampala Campus on Google Maps"
+            aria-label="Google Maps showing Bugema University Kampala Campus">
+          </iframe>
+        </div>
+
+        <div class="map-footer">
+          <i class="bi bi-geo-alt-fill"></i>
+          <div>
+            <strong style="color:var(--white);">Bugema University — Kampala Campus</strong><br>
+            <span style="font-size:0.82rem; color:rgba(255,255,255,0.55);">Kampala, Uganda, East Africa</span>
+          </div>
+          <a href="https://maps.google.com/?q=Bugema+University+Kampala+Campus"
+             target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-box-arrow-up-right me-1"></i>Open in Maps
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row g-4 pb-3">
+
+        <div class="col-md-4">
+          <h5 class="mb-3">
+            <i class="bi bi-hexagon-fill me-2" style="color:var(--violet);"></i>Kato Mike
+          </h5>
+          <p style="font-size:0.88rem; color:rgba(255,255,255,0.6);">
+            IT Student at Bugema University, Kampala Campus. Passionate about
+            technology and building meaningful digital experiences.
+          </p>
+        </div>
+
+        <div class="col-md-4">
+          <h6 class="mb-3">Quick Links</h6>
+          <a href="index.html" class="footer-link"><i class="bi bi-chevron-right me-1"></i>Home</a>
+          <a href="about.html" class="footer-link"><i class="bi bi-chevron-right me-1"></i>About Me</a>
+          <a href="gallery.html" class="footer-link"><i class="bi bi-chevron-right me-1"></i>Gallery</a>
+          <a href="contact.html" class="footer-link"><i class="bi bi-chevron-right me-1"></i>Contact</a>
+        </div>
+
+        <div class="col-md-4">
+          <h6 class="mb-3">Connect With Me</h6>
+          <div class="d-flex gap-3 mb-3">
+            <a href="#" class="social-link" title="GitHub"><i class="bi bi-github"></i></a>
+            <a href="#" class="social-link" title="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="mailto:katomike@gmail.com" class="social-link" title="Email">
+              <i class="bi bi-envelope-fill"></i>
+            </a>
+          </div>
+          <p style="font-size:0.85rem; color:rgba(255,255,255,0.45);">
+            <i class="bi bi-geo-alt me-1"></i>Kampala, Uganda
+          </p>
+        </div>
+
+      </div>
+      <hr />
+      <p class="copy">&copy; 2026 Kato Mike. All rights reserved. | Bugema University — Kampala Campus</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
